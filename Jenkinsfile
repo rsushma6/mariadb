@@ -5,7 +5,7 @@ pipeline{
         stage("verification"){
             steps
             {
-            sh 'helm -version'
+            sh 'helm version'
             }
         }
         stage("helm deploy"){
